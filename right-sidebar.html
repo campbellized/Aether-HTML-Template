@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Proto
+-->
+<html lang="en-us" dir="ltr">
+	<head>
+		<title>Origin | HTML5 template by campbellized</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">		
+		<link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("#mobi-menu").click(function(e){
+				$("#header .links").toggleClass("active");
+				e.preventDefault();
+			  });
+			});
+		</script>		
+	</head>
+	<body id="right-sidebar">
+		<div id="header">
+				<div class="wrapper">
+					<div class="nav">
+						<div  class="logo">
+							<a href="index.html">ORIGIN</a>
+							<a id="mobi-menu" href="#"><i class="fa fa-bars"></i></a>
+						</div>
+						<div class="links">
+							<ul>
+								<li><a class="button flat" href="index.html">Landing</a></li>
+								<li><a class="button flat" href="left-sidebar.html">Left Sidebar</a></li>
+								<li><a class="button flat active" href="right-sidebar.html">Right Sidebar</a></li>
+								<li><a class="button flat" href="no-sidebar.html">No Sidebar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="main">
+			<div class="hero">
+				<div class="banner"></div>
+					<div class="valign">
+						<div>
+							<div class="wrapper section centered">
+								<h2>Right Sidebar</h2>
+							</div>
+						</div>
+						<div class="overlay"></div>									
+					</div>
+				<div class="banner"></div>
+			</div>
+				<div class="wrapper">
+					<div class="section">
+						<h1>Forms, labels, and buttons.</h1>
+						<div class="grid">
+							<div class="col-3-4">
+								<div class="content">
+									<div class="section style1">
+										<h2 class="large">Example of a Simple Form</h2>
+										<div class="form">
+											<div class="col-1-1">
+												<div class="content">				
+													<div class="col-1-2">
+														<label class="large required" for="first-name">First Name</label>
+														<input placeholder="First Name" id="first-name" class="flat xlarge full" type="text" name="first-name" >
+													</div>
+													<div class="col-1-2">
+														<label class="large" for="last-name">Last Name</label>
+														<input placeholder="Last Name"id="last-name" class="flat xlarge full" type="text" name="last-name" >
+													</div>
+													<div class="col-1-1">
+														<label class="large required" for="subject">Email</label>
+														<input placeholder="Subject" id="subject" class="flat xlarge full" type="text" name="subject" >
+													</div>
+													<div class="col-1-1">
+														<label class="large">What's on your mind?</label>
+														<textarea class="full" rows="4" cols="50"></textarea> 
+														<input class="flat xlarge" type="submit" value="Submit">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-1-4">
+								<div class="content">
+									<div class="sidebar">
+										<img src="imgs/fotogrph-potentiometer-knob-SMALL.jpg" />
+										<h3>This is the sidebar. Exciting.</h3>
+										<p>In vestibulum orci non odio rhoncus mollis. Nullam pellentesque sapien sit amet nisi eleifend, ac adipiscing felis ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing. </p>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>	
+				</div>	
+		</div>
+		<div class="banner featured centered"><p>Hey this is a content area too. Sweet!</p></div>				
+		<div id="footer">
+			<div class="wrapper">
+				<div class="grid">
+					<div class="col-1-3 mob-1-1">
+						<div class="content">
+							<div  class="logo">
+								<a href="#">ORIGIN</a>
+							</div>						
+						</div>
+					</div>
+					<div class="col-1-3 mob-1-2">
+						<div class="content">
+							<h3>Site Map</h3>
+							<ul class="nav">
+								<li><a href="index.html">Landing</a></li>
+								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li><a href="right-sidebar.html">Right Sidebar</a></li>
+								<li><a href="no-sidebar.html">No Sidebar</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-1-3 mob-1-2">
+						<div class="content">
+							<h3>Social</h3>
+							<ul class="social">
+								<li><a class="fb" href="#">Facebook</a></li>
+								<li><a class="twitter" href="#">Twitter</a></li>
+								<li><a class="youtube" href="#">YouTube</a></li>
+								<li><a class="gplus" href="#">Google+</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="copyright centered">&copy; 20XX - Company Name </p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+/* Campbellized's stylesheet */
+
+@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700);
+
+html {
+	font-family: 'Muli', sans-serif;
+}
+.logo a, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cabin', sans-serif;
+}
+p, a{
+	font-weight:300;
+}
+input[type=submit] {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+}
+textarea {
+	font-size: 27px;
+	font-size: 1.5rem;
+}
+a.button.alt {
+	color: #fff;
+	border-color: #fff;
+	background-color: transparent;
+}
+a.button.alt:hover, input[type=submit]:hover  {
+	color: #505050;
+	background-color: #fff;
+}
+.fa-inverse{
+	color:#A2F686;
+}
+#header {
+	background: #505050; 
+	min-height:80px;
+}
+#header .logo a, #footer .logo a {
+	font-size:2em;
+	color: #fff;
+	font-weight: 700;
+}
+#header .nav{
+	top:20px;
+}
+#header .nav li a{
+	font-size: 21px;
+	font-size: 1.167rem;
+	background:#505050;
+	color:#fff;
+	margin-left:7px;
+	border: none;
+	padding: 8px;
+}
+#header .nav li a:hover, #header .nav li a.active {
+	background-color:#fff;
+	color:#505050;
+}
+.banner{
+	background: #8CD674;
+}
+.hero .section {
+	width:70%;
+	margin-bottom: 0;
+}
+.hero .section h2 {
+	font-size:54px;
+	font-size:3rem;
+	text-transform:uppercase;
+}
+.hero .section p {
+	font-size:32px;
+	font-size:1.778em;
+}
+.hero {
+	height:300px;
+	color: #fff;
+    background-image: url("../imgs/blurredcars_web.jpg");
+}
+#landing .hero {
+	height:500px;
+}
+.hero .valign {
+	height:100%;
+	width:100%;
+}
+.hero .banner {
+	height:10px;
+	position:absolute;
+	bottom:0;
+	opacity: 0.75;
+}
+.hero .banner:first-child {
+	top: 0;
+}
+#footer{
+	background: #505050; 
+	color: #fff;
+}
+.section.style1 {
+	background: #8CD674;
+	color: #fff;
+}
+.section.style2 {
+	background: #FBA244;
+	color: #fff;
+}
+.sidebar.style1 {
+	background: #8CD674;
+	color: #fff;
+}
+.sidebar.style2 {
+	background: #FBA244;
+	color: #fff;
+	border:1px solid #454545;
+}
+.content .icon.featured {
+	margin:36px auto;
+	margin:1.5rem auto;
+	display: block;
+}
+.content .icon.featured [class*='fa-'], .content:hover .icon.featured [class*='fa-'] {
+	transition: all 0.3s ease-out 0s;
+}
+.content .icon.featured [class*='fa-'] {
+    background: #505050;
+    border-radius: 0.222em;
+    padding: 0.292em;
+    -webkit-transform:scale(0.85) rotate(0deg);
+	-moz-transform:scale(0.85) rotate(0deg);
+	-o-transform:scale(0.85) rotate(0deg);
+	-ms-transform:scale(0.85) rotate(0deg);
+	transform:scale(0.85) rotate(0deg)	
+}
+.content:hover .icon.featured [class*='fa-']{
+	-webkit-transform:scale(1) rotate(0deg);
+	-moz-transform:scale(1) rotate(0deg);
+	-o-transform:scale(1) rotate(0deg);
+	-ms-transform:scale(1) rotate(0deg);
+	transform:scale(1) rotate(0deg)
+}
+
+.copyright {
+	font-weight:300;
+	font-size:12px !important;
+	font-size:0.667rem !important;
+}
+/* Just Responsive Things <3 */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.hero .section {
+		width:100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.hero .section {
+		width:100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
