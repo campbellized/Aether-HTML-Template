@@ -230,7 +230,7 @@ h6.small {
 	opacity:0.30;
 	background-color:#000;
 }
-/* ================== Buttons & Inputs & form related things ================== */
+/* ================== Buttons, Inputs & form related things ================== */
 a.button {
 	background:-webkit-linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0));
 	background:-o-linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0));
@@ -480,26 +480,8 @@ input.xlarge {
 #footer li a:hover {
 	color: #A2F686;
 }
-/* ============== Social Things ===================*/
-#footer .social a:before{
-	font-family:"FontAwesome";
-	padding-right:5px;
-	color:#fff;
-}
-#footer .social a.fb:before {
-	content:"\f082";
-}
-#footer .social a.twitter:before {
-	content:"\f081";
-}
-#footer .social a.youtube:before {
-	content:"\f166";
-}
-#footer .social a.gplus:before {
-	content:"\f0d4";
-}
 
-/* ============= Just Grid Stuff ====================*/
+/* ============= Grid Functionality ====================*/
 .grid, .form{
 	margin-bottom:45px;
 	margin-bottom:2.5rem;
@@ -579,7 +561,7 @@ input.xlarge {
 .form [class*='col-']:last-of-type, .form [class*='mob-']:last-of-type {
 	margin-bottom:0;
 }
-/* ================== Animations etc ================== */
+/* ================== Animations ================== */
 .nav li a, .nav li a:hover, a.button, a.button:hover, [class*='fa-'], [class*='fa-']:hover, input[type=submit]{
 	transition:all 0.2s linear 0s;
 	-webkit-transition:all 0.2s linear 0s;
@@ -590,11 +572,52 @@ input.xlarge {
 a, a:hover {
 	transition: all 0.2s linear;  
  }
-/* ================== Just Responsive Things <3 ================== */
+/* ================== Widgets ================== */
+	/* ============== Social Networking Widget ===================*/
+	#footer .social a:before{
+		font-family:"FontAwesome";
+		padding-right:5px;
+		color:#fff;
+	}
+	#footer .social a.fb:before {
+		content:"\f082";
+	}
+	#footer .social a.twitter:before {
+		content:"\f081";
+	}
+	#footer .social a.youtube:before {
+		content:"\f166";
+	}
+	#footer .social a.gplus:before {
+		content:"\f0d4";
+	}
+	/* ============== Tabs Widget ===================*/
+	.tab-controls {
+		display:block;
+		margin-bottom:18px;
+		margin-bottom:1rem;
+	}
+	.tab-controls li a {
+		border: none;
+	}
+	.tab-controls li {
+		display:inline-block;
+	}
+	.tab-controls li.active {
+		color:red;
+	}
+	[id^="framework-tabs"] .tab {
+		display: none;
+		margin-bottom:0;
+	}
+	[id^="framework-tabs"] .tab.active {
+		display: block;
+	}
+
+/* ================== Responsive navigation ================== */
 #header #mobi-menu{ 
 	visibility:hidden;
 }
-/* ================== Responsive navigation ================== */
 @media only screen and (max-width:768px) {
 	#main {
 		text-align:center;

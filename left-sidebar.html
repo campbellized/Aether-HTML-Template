@@ -12,14 +12,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">		
 		<link rel="stylesheet" href="css/style.css" />
         <script src="js/jquery-1.11.1.min.js"></script>
-		<script>
-			$(document).ready(function(){
-			  $("#mobi-menu").click(function(e){
-				$("#header .links").toggleClass("active");
-				e.preventDefault();
-			  });
-			});
-		</script>		
+        <script src="js/framework.js"></script>
 	</head>
 	<body id="left-sidebar">
 		<div id="header">
@@ -70,19 +63,57 @@
 									<h1>This is a page has a left sidebar. This is weird.</h1>
 									<p>Donec quam velit, sollicitudin sed tincidunt non, varius sit amet mauris. Aenean auctor ipsum quis ipsum viverra lobortis. Nam porttitor dapibus ipsum vitae laoreet. Donec vel libero quis mi faucibus rutrum quis eu magna. Aenean. </p>
 								</div>
-								<div class="section style1">
-									<div class="grid">
+								<div id="framework-tabs">
+									<ul class="tab-controls">
+										<li><a href="#">first</a></li>
+										<li><a href="#">second</a></li>
+										<li><a href="#">third</a></li>
+									</ul>
+									<div class="section style1">
+										<h2>This is a tabbed area</h2>
+										<div class="tab grid">
 										<div class="col-1-2">
-											<div class="content">
-												<a class="image" href="#">
-													<img src="imgs/fotogrph-potentiometer-knob-SMALL.jpg" />
-												</a>
+												<div class="content">
+													<a class="image" href="#">
+														<img src="imgs/fotogrph-potentiometer-knob-SMALL.jpg" />
+													</a>
+												</div>
+											</div>
+											<div class="col-1-2">
+												<div class="content">
+													<h3>First Tab</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum id metus id consectetur. Mauris volutpat turpis non quam convallis, non pulvinar nisl porta. Quisque congue id felis eu dictum. Sed sapien diam, rhoncus sed.  </p>
+												</div>
 											</div>
 										</div>
-										<div class="col-1-2">
-											<div class="content">
-												<h3>This is something.</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum id metus id consectetur. Mauris volutpat turpis non quam convallis, non pulvinar nisl porta. Quisque congue id felis eu dictum. Sed sapien diam, rhoncus sed.  </p>
+										<div class="tab grid">
+											<div class="col-1-2">
+												<div class="content">
+													<h3>Second Tab</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum id metus id consectetur. Mauris volutpat turpis non quam convallis, non pulvinar nisl porta. Quisque congue id felis eu dictum. Sed sapien diam, rhoncus sed.  </p>
+												</div>
+											</div>											
+											<div class="col-1-2">
+												<div class="content">
+													<a class="image" href="#">
+														<img src="imgs/fotogrph-potentiometer-knob-SMALL.jpg" />
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="tab grid">
+											<div class="col-1-2">
+												<div class="content">
+													<a class="image" href="#">
+														<img src="imgs/fotogrph-potentiometer-knob-SMALL.jpg" />
+													</a>
+												</div>
+											</div>
+											<div class="col-1-2">
+												<div class="content">
+													<h3>Third Tab</h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum id metus id consectetur. Mauris volutpat turpis non quam convallis, non pulvinar nisl porta. Quisque congue id felis eu dictum. Sed sapien diam, rhoncus sed.  </p>
+												</div>
 											</div>
 										</div>
 									</div>
