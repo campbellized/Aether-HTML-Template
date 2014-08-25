@@ -157,21 +157,21 @@ h6.small {
 #main {
 	background:#fff;
 }
-#header .wrapper{
+#header .container{
 	padding:0;
 }
-.wrapper {
+.container {
 	width:90%;
 	max-width:1140px;
 	margin:0 auto;
 	padding:45px;
 	padding:2.5rem;
 }
-#main > .wrapper {
+#main > .container {
 	padding-left: 0;
 	padding-right: 0;
 }
-.section, .section.wrapper {
+.section, .section.container {
 	margin-bottom:45px;
 	margin-bottom:2.5rem;
 }
@@ -184,13 +184,13 @@ h6.small {
 	padding:1rem;
 }
 
-.wrapper *:last-child:not([class*='mob-']), .section *:last-child:not([class*='mob-']), .banner *:last-child:not([class*='mob-']){
+.container *:last-child:not([class*='mob-']), .section *:last-child:not([class*='mob-']), .banner *:last-child:not([class*='mob-']){
 	margin-bottom:0;
 }
-.wrapper *:first-child, .section *:first-child, .banner *:first-child{
+.container *:first-child, .section *:first-child, .banner *:first-child{
 	margin-top:0;
 }
-.wrapper {
+.container {
     width:100%;
 }
 .hero {
@@ -610,10 +610,27 @@ a, a:hover {
 		display: none;
 		margin-bottom:0;
 	}
+	[id^="framework-tabs"] .tab.animate {
+		position:absolute;
+		width:calc(100% - 30px);
+	}
 	[id^="framework-tabs"] .tab.active {
 		display: block;
 	}
-
+	/* ============== Interactive Elements ===================*/
+	.hoverable{
+		-webkit-transition:transform 0.7s ease-in;
+		-moz-transition:transform 0.7s ease-in;
+		-ms-transition:transform 0.7s ease-in;
+		transition:transform 0.7s ease-in;		
+	}
+	.hoverable:hover{
+		-webkit-transform:scale(1.2);
+		-moz-transform:scale(1.2);
+		-ms-transform:scale(1.2);
+		transform:scale(1.2);
+	}
+	
 /* ================== Responsive navigation ================== */
 #header #mobi-menu{ 
 	visibility:hidden;
@@ -636,11 +653,11 @@ a, a:hover {
 		padding-bottom:0;
 		z-index:2;
 	}
-	#header .wrapper {
+	#header .container {
 		width:100%;
 		padding: 0;
 	}
-	#main > .wrapper {
+	#main > .container {
 		width:90%;
 	}
 	#header .nav {

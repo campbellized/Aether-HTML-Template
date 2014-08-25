@@ -79,7 +79,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 	color: #fff;
     background-image: url("../imgs/blurredcars_web.jpg");
 }
-#landing .hero {
+.landing .hero {
 	height:500px;
 }
 .hero .valign {
