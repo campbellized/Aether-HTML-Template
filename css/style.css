@@ -42,9 +42,6 @@ a.button.alt:hover, input[type=submit]:hover  {
 	color: #fff;
 	font-weight: 700;
 }
-#header .nav{
-	top:20px;
-}
 #header .nav li a{
 	font-size: 21px;
 	font-size: 1.167rem;
@@ -82,7 +79,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 .landing .hero {
 	height:500px;
 }
-.hero .valign {
+.hero .valign, .splash-bg > .valign {
 	height:100%;
 	width:100%;
 }
@@ -94,6 +91,16 @@ a.button.alt:hover, input[type=submit]:hover  {
 }
 .hero .banner:first-child {
 	top: 0;
+}
+.splash-bg{
+	height:auto;
+	color: #fff;
+    background-image: url("../imgs/blurredcars_web.jpg");
+}
+.splash-bg .valign > div > .section {
+	margin: 5em auto;
+	background-color:#fff;
+	color:#454545;
 }
 #footer{
 	background: #505050; 

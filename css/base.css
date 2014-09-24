@@ -151,7 +151,7 @@ h6.small {
 	vertical-align:middle !important;
 }
  /* ============= General Layout ============*/
-#header, #main, #footer, .content, .hero, .section {
+#header, #main, #footer, .content, .hero, .section, .splash-bg {
 	position:relative;
 }
 #main {
@@ -193,7 +193,7 @@ h6.small {
 .container {
     width:100%;
 }
-.hero {
+.hero, .splash-bg {
 	overflow:hidden;
 	text-align:center;
 	height:200px;
@@ -205,12 +205,12 @@ h6.small {
 	-o-background-size: cover;
 	background-size: cover;	
 }
-.hero img.bg {
+/*.hero img.bg {
 	width:100%;
 	height:auto;
 	min-width:100%;
 	min-height:100%;
-}
+}*/
 .banner {
 	min-height:10px;
 	width:100%;
@@ -437,6 +437,7 @@ input.xlarge {
 	width:100%;
 	display:table;
 	position:relative;
+	padding:20px 0;
 }
 #header .nav .logo {
 	display:table-cell;
@@ -659,9 +660,6 @@ a, a:hover {
 	}
 	#main > .container {
 		width:90%;
-	}
-	#header .nav {
-		top:0 !important;
 	}
 	#header .nav .links ul {
 		overflow:hidden;
