@@ -1,13 +1,14 @@
 /* Campbellized's stylesheet */
 
-@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
-@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Antic);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic);
 
 html {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Antic', sans-serif;
+	font-size:20px;
 }
 .logo a, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 }
 p, a{
 	font-weight:300;
@@ -58,7 +59,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 	background-color:#fff;
 	color:#505050;
 }
-.overlay {
+.hero .overlay {
 	opacity:0.05;
 }
 .banner{
@@ -77,18 +78,19 @@ a.button.alt:hover, input[type=submit]:hover  {
 	text-transform:uppercase;
 }
 .hero .section p {
-	font-size:32px;
-	font-size:1.778em;
+	font-size:30px;
+	font-size:1.5rem;
 }
 .hero {
 	height:300px;
 	color: #fff;
     background-image: url("../imgs/wooded-glen-web.jpg");
+	background-attachment:fixed;
 	border-bottom:4px double #fff;
 }
 .landing .hero{
 	height:600px;
-	height:98vh;
+	height:100vh;
 	
 }
 .hero .valign, .splash-bg > .valign {
@@ -114,13 +116,47 @@ a.button.alt:hover, input[type=submit]:hover  {
 	background-color:#fff;
 	color:#454545;
 }
+.continue{
+	border-bottom:none;
+	position:absolute;
+	bottom:0;
+}
+.continue i{
+	font-size:56px;
+	font-size:3rem;
+}
+.continue:hover i{
+    -webkit-transform:scale(1.25) rotate(0deg);
+	-moz-transform:scale(1.25) rotate(0deg);
+	-o-transform:scale(1.25) rotate(0deg);
+	-ms-transform:scale(1.25) rotate(0deg);
+	transform:scale(1.25) rotate(0deg)
+}
 #footer{
-	background: #505050; 
+	background-image: url("../imgs/wooded-glen-web.jpg");
+	background-attachment:fixed;
 	color: #fff;
+}
+#footer .overlay{
+	background-image: url("../imgs/dark_geometric.png");
+	opacity:0.75;
 }
 .section.style1 {
 	background: #8CD674;
 	color: #fff;
+}
+.section.style1.full-w {
+	background-image: url("../imgs/raindrops_web.jpg");
+	background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;		
+	border-bottom:4px double #fff;
+	border-top:4px double #fff;
 }
 .section.style2 {
 	background: #FBA244;
@@ -151,7 +187,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 	-moz-transform:scale(0.85) rotate(0deg);
 	-o-transform:scale(0.85) rotate(0deg);
 	-ms-transform:scale(0.85) rotate(0deg);
-	transform:scale(0.85) rotate(0deg)	
+	transform:scale(0.85) rotate(0deg)
 }
 .content:hover .icon.featured [class*='fa-']{
 	-webkit-transform:scale(1) rotate(0deg);

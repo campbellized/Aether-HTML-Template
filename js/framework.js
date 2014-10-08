@@ -29,4 +29,9 @@ $js(document).ready(function(){
 			});
 		});
 	});
+	
+	$js('a[href*=#]').on('click', function(e){
+		e.preventDefault();
+		$js('html,body').animate({scrollTop:$js(this.hash).offset().top}, 1500, 'swing');
+	});
 });
