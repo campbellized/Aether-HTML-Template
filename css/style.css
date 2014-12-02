@@ -6,33 +6,59 @@
 html {
 	font-family: 'Antic', sans-serif;
 	font-size:20px;
+	color:#505050;
 }
 .logo a, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Playfair Display', sans-serif;
 }
+a, p, h1, h2, h3, h4, h5, h6, label {
+	text-shadow:1px 1px 1px #cacaca;
+}
 p, a{
 	font-weight:300;
 }
-input[type=submit] {
-	background-color: transparent;
-	border-color: #fff;
-	color: #fff;
+img{
+	border:3px double #505050;
 }
-textarea {
-	font-size: 27px;
-	font-size: 1.5rem;
+a.button, input[type=submit]{
+	background-color:#94C7B6;
+	padding:6px 18px;
+	padding:0.35rem 1.05rem;
+	border-radius:0;
+	border:1px solid #fff;
+	color:#fff;
+	text-shadow:none !important;
+	line-height:1;
+}
+a.button.xlarge {
+	padding:9px 27px;
+	padding:0.5rem 1.5rem;
+}
+a.button:hover, input[type=submit]:hover {
+	color:#454545;
+	background-color:transparent;
+	border-color:#454545;
 }
 a.button.alt {
 	color: #fff;
 	border-color: #fff;
 	background-color: transparent;
 }
-a.button.alt:hover, input[type=submit]:hover  {
-	color: #505050;
-	background-color: #fff;
+a.button.alt:hover, input[type=submit].alt:hover  {
+	border:1px solid #fff;
+	color: #fff;
+	/*background-color:#FF6B6B;
+	background-color:#FF847C;
+	background-color:#94C7B6;*/
+	background-color:#94C7B6;
+}
+textarea {
+	font-size: 27px;
+	font-size: 1.5rem;
 }
 .fa-inverse{
-	color:#A2F686;
+	/*color:#A2F686;*/
+	background:#94C7B6 !important;
 }
 #header {
 	background: transparent; 
@@ -49,15 +75,17 @@ a.button.alt:hover, input[type=submit]:hover  {
 #header .nav li a{
 	font-size: 21px;
 	font-size: 1.167rem;
-	background:transparent;
-	color:#fff;
-	margin-left:7px;
+	background:#fff;
+	color:#454545;
 	border: 1px solid #fff;
 	padding: 8px;
 }
+#header .nav {
+	text-align:left;
+}
 #header .nav li a:hover, #header .nav li a.active {
-	background-color:#fff;
-	color:#505050;
+	background-color:#94C7B6;
+	color:#fff;
 }
 .hero .overlay {
 	opacity:0.05;
@@ -69,25 +97,32 @@ a.button.alt:hover, input[type=submit]:hover  {
 	width:70%;
 	margin-bottom: 0;
 }
+.hero .section a, .hero .section p, .hero .section h1, .hero .section h2,
+.hero .section h3,.hero .section h4, .hero .section h5, .hero .section h6,
+.full-w a, .full-w p, .full-w h1, .full-w h2, .full-w h3,.full-w h4, .full-w h5, .full-w h6 {
+	text-shadow:1px 1px 7px #505050;
+}
 .landing .hero .section {
 	border:4px double #fff;
 }
 .hero .section h2 {
-	font-size:54px;
-	font-size:3rem;
-	text-transform:uppercase;
+	font-size:50px;
+	font-size:2.5rem;
 }
 .hero .section p {
 	font-size:30px;
 	font-size:1.5rem;
 }
 .hero {
+	overflow:visible;
+	z-index:1000;
 	height:300px;
 	color: #fff;
     background-image: url("../imgs/wooded-glen-web.jpg");
 	background-attachment:fixed;
 	border-bottom:4px double #fff;
 }
+ 
 .landing .hero{
 	height:600px;
 	height:100vh;
@@ -109,7 +144,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 .splash-bg{
 	height:auto;
 	color: #fff;
-    background-image: url("../imgs/blurredcars_web.jpg");
+    background-image: url("../imgs/wooded-glen-web.jpg");
 }
 .splash-bg .valign > div > .section {
 	margin: 5em auto;
@@ -133,6 +168,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 	transform:scale(1.25) rotate(0deg)
 }
 #footer{
+	border-top:4px double #FFFFFF;
 	background-image: url("../imgs/wooded-glen-web.jpg");
 	background-attachment:fixed;
 	color: #fff;
@@ -141,11 +177,15 @@ a.button.alt:hover, input[type=submit]:hover  {
 	background-image: url("../imgs/dark_geometric.png");
 	opacity:0.75;
 }
-.section.style1 {
-	background: #8CD674;
-	color: #fff;
+.style1 {
+    background:#f0f0f0;
+    box-shadow: 0 1px 3px #454545
+}
+.style1 a, .style1 p, .style1 h1, .style1 h2, .style1 h3,.style1 h4, .style1 h5, .style1 h6, .style1 label {
+	text-shadow:none;
 }
 .section.style1.full-w {
+	color:#fff;
 	background-image: url("../imgs/raindrops_web.jpg");
 	background-attachment:fixed;
     background-repeat: no-repeat;
@@ -158,18 +198,10 @@ a.button.alt:hover, input[type=submit]:hover  {
 	border-bottom:4px double #fff;
 	border-top:4px double #fff;
 }
-.section.style2 {
-	background: #FBA244;
-	color: #fff;
-}
-.sidebar.style1 {
-	background: #8CD674;
-	color: #fff;
-}
-.sidebar.style2 {
-	background: #FBA244;
-	color: #fff;
-	border:1px solid #454545;
+.full-w .container {
+	width:100%;
+	padding-left:0;
+	padding-right:0;
 }
 .content .icon.featured {
 	margin:36px auto;
@@ -180,7 +212,7 @@ a.button.alt:hover, input[type=submit]:hover  {
 	transition: all 0.3s ease-out 0s;
 }
 .content .icon.featured [class*='fa-'] {
-    background: #505050;
+    background: #454545;
     border-radius: 0.222em;
     padding: 0.292em;
     -webkit-transform:scale(0.85) rotate(0deg);
@@ -202,22 +234,86 @@ a.button.alt:hover, input[type=submit]:hover  {
 	font-size:12px !important;
 	font-size:0.667rem !important;
 }
+#footer h3{
+	border-bottom:2px solid #94C7B6;
+	margin-bottom:5px;
+	margin-bottom:0.278rem;
+}
+#footer li a:hover {
+	color: #94C7B6;
+}
 /* Just Responsive Things <3 */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+	.container {
+		padding:18px;
+		padding:2rem;
+	}
 	#header {
 		position:relative;
 	}
+	#header #mobi-menu {
+		border: 1px solid #fff;
+		text-shadow:1px 1px 7px #505050;
+	}
+	.hero .valign, .splash-bg > .valign {
+		position: absolute;
+		top:0;
+	}
+	#header .nav .links li {
+		padding:0.5rem 2.5%;
+		background:url("../imgs/dark_geometric.png");
+	}
+	#header .nav .links li a{
+		color:#fff;	
+		padding:0.5rem 2.5%;
+		background:none !important;
+		border:none;
+	}
+	#header .nav li a:hover, #header .nav li a.active {
+		background-color:#fff !important;
+		color:#454545;
+	}	
 	.hero .section {
-		width:100%;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 }
 @media only screen and (max-width: 480px) {
+	.container {
+		padding:18px;
+		padding:2rem;
+	}
 	#header {
 		position:relative;
 	}
+	#header #mobi-menu {
+		border: 1px solid #fff;
+		text-shadow:1px 1px 7px #505050;
+	}	
+	.hero .valign, .splash-bg > .valign {
+		height:100%;
+		position: absolute;
+		top: 0;
+	}
+	.landing .hero .section{
+		border:none;
+	}
+	#header .nav .links li {
+		padding:0.5rem 2.5%;
+		background:url("../imgs/dark_geometric.png");
+	}
+	#header .nav .links li a{
+		color:#fff;
+		padding:0.5rem 2.5%;
+		background:none !important;
+		border:none;
+	}
+
+	#header .nav li a:hover, #header .nav li a.active {
+		background-color:#fff !important;
+		color:#454545;
+	}	
 	.hero .section {
 		width:100%;
 		padding-left: 20px;
