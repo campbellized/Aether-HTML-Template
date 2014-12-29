@@ -128,7 +128,7 @@ textarea {
 	height:100vh;
 	
 }
-.hero .valign, .splash-bg > .valign {
+.hero .valign{
 	height:100%;
 	width:100%;
 }
@@ -155,6 +155,8 @@ textarea {
 	border-bottom:none;
 	position:absolute;
 	bottom:0;
+	left: 50%;
+    margin-left: -20px;
 }
 .continue i{
 	font-size:56px;
